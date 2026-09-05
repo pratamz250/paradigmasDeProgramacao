@@ -4,4 +4,7 @@ gosta(maria, pizza).
 gosta(pedro, hamburguer).
 
 gosta_de_comida(X) :-
-	gosta(X, pizza) , gosta(X, sushi).
+	gosta(X, pizza) ; gosta(X, sushi).
+
+mesmo_gosto(X, Z) :-
+	gosta(X, Y) , gosta(Z, Y).
