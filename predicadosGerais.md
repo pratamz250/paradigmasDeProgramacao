@@ -23,6 +23,24 @@
 | `split_string/4`  | separar uma string em partes                     | `split_string("10 20 30", " ", " ", X).` → `X = ["10","20","30"]` |
 | `string_chars/2`  | converter string ↔ lista de caracteres           | `string_chars("abc", X).` → `X = [a,b,c]`                         |
 
+## Operadores 
+
+| Operador | Significado |
+| -------- | ----------- |
+| =        | Unificação  |
+| \=       | Não unifica |
+| ==       | Termos idênticos |
+| \==      | Termos diferentes |
+| is       | Avaliação aritmética |
+| =:=      | Igualdade aritmética |
+| =\=      | Desigualdade aritmética |
+| <        | Menor |
+| =<       | Menor ou igual |
+| >        | Maior |
+| >=       | Maior ou igual |
+| \+       | Negação por falha |
+| !        | Cut |
+
 ## Exemplos auxiliares
 
 ### `member/2`
