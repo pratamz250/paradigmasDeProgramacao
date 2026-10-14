@@ -1,3 +1,6 @@
+# Compilar e receber entrada padrão
+prolog -s main.pl -g main -t halt < in.txt
+
 # Predicados interessantes em Prolog
 
 | Predicado         | Para que serve                                   | Caso de uso                                                       |
