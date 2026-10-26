@@ -1,19 +1,11 @@
-creatingLists([H|T], M) :-
-		
-
 main :-
-	read_string(user_input, "\n", "\n", _, Nstr) ,
-	number_string(N, Nstr) ,
+	read_string(user_input, "\n", "\n", _, NStr) ,
+	read_string(user_input, "\n", "\n", _, VStr) ,
 
-	read_string(user_input, "\n", "\n", _, Astr) , /*array as string*/
-	split_string(Astr, " ", " ", Achars) , 		  /*array as chars*/
-	maplist(number_string, A, Achars) , 		  /*array as numbers*/
+	number_string(N, NStr) ,
+	split_string(VStr, " ", " ", VChars) ,
+	maplist(number_string, V, VChars) ,
 
-	write(N) ,
-	nl ,
-	write(A) ,
-	nl ,
+	max_list(V, Bigger) ,
 
-	max_list(A, M) ,
-
-	creatingLists(A, M).
+	
